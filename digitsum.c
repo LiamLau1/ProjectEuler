@@ -6,7 +6,6 @@ int countdigit(long double n)
 {
     while(n > 1)
     {
-    	 printf("%LG \n", n);     // n = n/10
         n = (n/10);
         ++count;
 
@@ -16,9 +15,8 @@ int countdigit(long double n)
 }
 
 int main(){
-	long double j = pow(2,1000);
+	long double j = 21; 
 	int N =	countdigit((long double)j);
-	printf("%i \n", N);
 	int  runningtotal,  digit;
         runningtotal  =  0;
         for(int  i  =  0;  i  < N;  i++){
@@ -26,7 +24,6 @@ int main(){
                 runningtotal  =  runningtotal +  digit;
         }
                 printf("%i \n", runningtotal);
-	return 0;
-
+	  return 0;
 
 }
